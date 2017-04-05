@@ -1,0 +1,15 @@
+#background {
+    background: #41295a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(left, #2F0743, #41295a);
+    background: -moz-linear-gradient(left, #2F0743, #41295a);
+    background: -o-linear-gradient(left, #2F0743, #41295a);
+    background: linear-gradient(to right, #2F0743, #41295a);
+    
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
