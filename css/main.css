@@ -21,4 +21,17 @@ body {
 #eyecatch {
     color: white;
     font-family: Adam;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+}
+
+#eyecatch h1 {
+    font-size: 4em;
+}
+#eyecatch h2 {
+    font-size: 3em;
+    vertical-align: 3px;
 }
