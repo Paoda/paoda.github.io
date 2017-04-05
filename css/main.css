@@ -28,11 +28,14 @@ body {
     color: white;
     font-family: Adam;
 
+    left: 5%;
+    width: 95%;
+}
+
+.verticalCenter {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    left: 5%;
-    width: 95%;
 }
 
 #eyecatch h1 {
