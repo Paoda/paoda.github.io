@@ -12,6 +12,7 @@
     background: linear-gradient(to right, #9733EE, #DA22FF);
     height: 100vh;
     width: 100vw;
+    max-width: 100%;
     background-position: fixed;
 }
 
@@ -24,16 +25,14 @@ h1 {
 body {
     margin: 0px;
     padding: 0px;
-    
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 #eyecatch {
+    width: auto;
     color: white;
     font-family: Adam;
-    left: 5%;
-    width: 95%;
+    left: 5vw;
+    position: absolute;
 }
 
 .verticalCenter {
@@ -41,7 +40,6 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
-
 #eyecatch h1 {
     font-size: 4em;
 }
@@ -53,21 +51,26 @@ body {
 
 #projects {
     width: 100vw;
-    height: 70vh;
+    min-height: 75vh;
+    background: gray;
+    max-width: 100%;
+    
 }
 
-.thumbnail {
-    height: auto;
-    max-width: 35em;
-    width: auto;
+#navbar {
+    background: rgba(0,0,0,0);
+    position: absolute;
+    top:0;
+    left: 0;
+    margin: 0;
 }
-.card {
-    width: 35em;
-    display:block;
-    margin: auto;
-    margin-top: 4em;
-}
-
-.container-fluid {
-    width: 100vw;
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-family: Adam;
+    font-size: 1.5em;
+    text-align: center;
+    margin-right: 2.5vw;
+    
+    
 }
