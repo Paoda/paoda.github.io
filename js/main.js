@@ -7,12 +7,5 @@ $('a').click(function() {
     return false;
 });
 
-//Responsive Menu
-function menu() {
-    let navbar = document.getElementById('navbar');
-    if navbar.className == 'navClass') {
-        navbar.className += 'responsive';
-    }else {
-        navbar.className = "navClass";
-    }
-}
+
+//Animations
