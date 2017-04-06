@@ -4,30 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Test</title>
     <style>
-        .square{
-            width: 50px;
-            height: 50px;
-            background: red;
+        @font-face {
+            font-family: Adam;
+            src: url('./assets/typeface/Adam.otf');
         }
+        #eyecatch{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            width: auto;
+            color: black;
+            font-family: Adam;
+            font-size: 5vw;
+            left: 5vw;
+            position: absolute;
+ 
+        }
+        .paodaTranslateX {
+            animation: paodaTranslateX 5s; 
+            -webkit-animation: paodaTranslateX 5s;
+            -moz-animation: paodaTranslateX 5s;
+            -o-animation: paodaTranslateX 5s;
+        }
+
+        @-webkit-keyframes paodaTranslateX {
+            0%{ transform: translateX(0vw); }
+            100% {transform: translateX(95vw);}
+        }
+        @-moz-keyframes paodaTranslateX {
+            0%{ transform: translateX(0vw); }
+            100% {transform: translateX(95vw);}
+        }
+        @-o-keyframes paodaTranslateX {
+            0%{ transform: translateX(0vw); }
+            100% {transform: translateX(95vw);}
+        }
+        @keyframes paodaTranslateX {
+            0%{ transform: translateX(0vw); }
+            100% {transform: translateX(95vw);}
+        }
+
+       .paodaBreathe {
+            animation: paodaBreathe 5s infinite;
+            -webkit-animation: paodaBreathe 5s infinite;
+            -moz-animation: paodaBreathe 5s infinite;
+            -o-animation: paodaBreathe 5s infinite;
+       }
+       @-webkit-keyframes paodaBreathe {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0;}
+       }
+       @-moz-keyframes paodaBreathe {
+             0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0;}
+       }
+       @-o-keyframes paodaBreathe {
+             0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0;}
+       }
+       @keyframes paodaBreathe{
+             0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0;}
+       }
     </style>
 </head>
 <body>
-    <div class='square'></div>
+    <div id='eyecatch' class='paodaTranslateX'>PAODA</div>
     <!-- Javascript -->
     <script src='js/animejs/anime.min.js'></script>
     <script>
-        anime({
-            targets: '.square',
-            translateX: [
-                {value: 1000, duration: 1000},
-                {value: 0, duration: 1000}
-            ],
-           // backgroundColor: '#000',
-            duration: 2000,
-            loop: true
-        });
+        
     </script>
 </body>
 </html>
