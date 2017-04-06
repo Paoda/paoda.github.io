@@ -1,3 +1,5 @@
+//Animations
+
 //Smooth Scrolling
 var $root = $('html, body');
 $('a').click(function() {
@@ -6,6 +8,3 @@ $('a').click(function() {
     }, 550);
     return false;
 });
-
-
-//Animations

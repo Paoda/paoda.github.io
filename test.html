@@ -11,76 +11,43 @@
             src: url('./assets/typeface/Adam.otf');
         }
         #eyecatch{
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
+            right: 0;
+            opacity: 0;
 
             width: auto;
             color: black;
             font-family: Adam;
             font-size: 5vw;
-            left: 5vw;
+
+        }
+        .verticalCenter {
             position: absolute;
- 
+            top: 50%;
+            transform: translateY(-50%);
         }
-        .paodaTranslateX {
-            animation: paodaTranslateX 5s; 
-            -webkit-animation: paodaTranslateX 5s;
-            -moz-animation: paodaTranslateX 5s;
-            -o-animation: paodaTranslateX 5s;
-        }
-
-        @-webkit-keyframes paodaTranslateX {
-            0%{ transform: translateX(0vw); }
-            100% {transform: translateX(95vw);}
-        }
-        @-moz-keyframes paodaTranslateX {
-            0%{ transform: translateX(0vw); }
-            100% {transform: translateX(95vw);}
-        }
-        @-o-keyframes paodaTranslateX {
-            0%{ transform: translateX(0vw); }
-            100% {transform: translateX(95vw);}
-        }
-        @keyframes paodaTranslateX {
-            0%{ transform: translateX(0vw); }
-            100% {transform: translateX(95vw);}
-        }
-
-       .paodaBreathe {
-            animation: paodaBreathe 5s infinite;
-            -webkit-animation: paodaBreathe 5s infinite;
-            -moz-animation: paodaBreathe 5s infinite;
-            -o-animation: paodaBreathe 5s infinite;
-       }
-       @-webkit-keyframes paodaBreathe {
-            0% { opacity: 0; }
-            50% { opacity: 1; }
-            100% { opacity: 0;}
-       }
-       @-moz-keyframes paodaBreathe {
-             0% { opacity: 0; }
-            50% { opacity: 1; }
-            100% { opacity: 0;}
-       }
-       @-o-keyframes paodaBreathe {
-             0% { opacity: 0; }
-            50% { opacity: 1; }
-            100% { opacity: 0;}
-       }
-       @keyframes paodaBreathe{
-             0% { opacity: 0; }
-            50% { opacity: 1; }
-            100% { opacity: 0;}
-       }
     </style>
 </head>
 <body>
-    <div id='eyecatch' class='paodaTranslateX'>PAODA</div>
+    <div id='eyecatch' class='verticalCenter'>PAODA</div>
     <!-- Javascript -->
     <script src='js/animejs/anime.min.js'></script>
     <script>
-        
+       var PaodaFadeIn = anime({
+            targets: '#eyecatch',
+            opacity: 1,
+            translateX: '-80vw',
+            translateY: '-50%',
+            easing: 'easeInOutSine'
+        });
+        /* anime({
+            delay: 200,
+            targets: '#eyecatch',
+            opacity: [
+                {value: 0, duration: 500},
+                {value: 1, duration: 500}
+            ],
+            loop: true;
+        }) */
     </script>
 </body>
 </html>

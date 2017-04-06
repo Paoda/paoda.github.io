@@ -28,25 +28,17 @@ body {
 }
 
 #eyecatch {
-    width: auto;
+    left: 5vw;
+
     color: white;
     font-family: Adam;
-    left: 5vw;
-    position: absolute;
+    font-size: 5vw;
 }
 
 .verticalCenter {
-    position: relative;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
-}
-#eyecatch h1 {
-    font-size: 4em;
-}
-
-#eyecatch h2 {
-    font-size: 3em;
-    vertical-align: 3px;
 }
 
 #projects {
